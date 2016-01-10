@@ -79,7 +79,7 @@ namespace Crownwood.Magic.Menus
         protected int _trackItem;
         protected int _breadthGap;
         protected int _animateTime;
-        protected IntPtr _oldFocus;
+        private IntPtr _oldFocus;
         protected Pen _controlLPen;
         protected bool _animateFirst;
         protected bool _selected;

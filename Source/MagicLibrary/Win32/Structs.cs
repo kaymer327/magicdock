@@ -18,10 +18,10 @@ namespace Crownwood.Magic.Win32
     [StructLayout(LayoutKind.Sequential)]
     public struct MSG 
     {
-        public IntPtr hwnd;
+        private IntPtr hwnd;
         public int message;
-        public IntPtr wParam;
-        public IntPtr lParam;
+        private IntPtr wParam;
+        private IntPtr lParam;
         public int time;
         public int pt_x;
         public int pt_y;
@@ -30,7 +30,7 @@ namespace Crownwood.Magic.Win32
     [StructLayout(LayoutKind.Sequential)]
     public struct PAINTSTRUCT
     {
-        public IntPtr hdc;
+        private IntPtr hdc;
         public int fErase;
         public Rectangle rcPaint;
         public int fRestore;
