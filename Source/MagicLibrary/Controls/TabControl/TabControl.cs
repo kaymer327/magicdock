@@ -3642,7 +3642,7 @@ namespace Crownwood.Magic.Controls
                 Form f = c as Form;
                 
                 // AutoScaling can cause the Control/Form to be
-                if ((f != null) && (f.AutoScale))
+                if ((f != null) && (!f.AutoScaleMode.Equals(AutoScaleMode.None)))
                 {
                     // Workaround the problem where a form has a defined 'AutoScaleBaseSize' value. The 
                     // first time it is shown it calculates the size of each contained control and scales 
