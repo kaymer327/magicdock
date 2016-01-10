@@ -27,7 +27,7 @@ namespace Crownwood.Magic.Common
             Pushed
         }
     
-        protected static IntPtr _halfToneBrush = IntPtr.Zero;
+        private static IntPtr _halfToneBrush = IntPtr.Zero;
 
         public static void DrawReverseString(Graphics g, 
                                              String drawText, 
